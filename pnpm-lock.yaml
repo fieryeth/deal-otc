@@ -2,8 +2,12 @@ lockfileVersion: 5.3
 
 specifiers:
   '@nomiclabs/hardhat-ethers': ^2.0.4
+  '@openzeppelin/contracts': ^4.4.2
   ethers: ^5.5.3
   hardhat: ^2.8.2
+
+dependencies:
+  '@openzeppelin/contracts': 4.4.2
 
 devDependencies:
   '@nomiclabs/hardhat-ethers': 2.0.4_ethers@5.5.3+hardhat@2.8.2
@@ -397,6 +401,10 @@ packages:
       ethers: 5.5.3
       hardhat: 2.8.2
     dev: true
+
+  /@openzeppelin/contracts/4.4.2:
+    resolution: {integrity: sha512-NyJV7sJgoGYqbtNUWgzzOGW4T6rR19FmX1IJgXGdapGPWsuMelGJn9h03nos0iqfforCbCB0iYIR0MtIuIFLLw==}
+    dev: false
 
   /@sentry/core/5.30.0:
     resolution: {integrity: sha512-TmfrII8w1PQZSZgPpUESqjB+jC6MvZJZdLtE/0hZ+SrnKhW3x5WlYLvTXZpcWePYBku7rl2wn1RZu6uT0qCTeg==}

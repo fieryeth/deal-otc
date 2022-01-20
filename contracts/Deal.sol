@@ -1,5 +1,7 @@
 pragma solidity ^0.8.0;
 
+import "@openzeppelin/contracts/interfaces/IERC20.sol";
+
 contract Deal {
     address public user0;
     address public user1;
