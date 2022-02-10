@@ -29,6 +29,10 @@ contract Deal {
         amount1 = _amount1;
     }
 
+    function getDealInfo() view external returns(address, address, address, address, uint256, uint256) {
+        return (user0, user1, token0, token1, amount0, amount1);
+    }
+
     function depositToken0(uint256 amount) external {
         require(msg.sender == user0, "You cannot deposit tokens.");
 
