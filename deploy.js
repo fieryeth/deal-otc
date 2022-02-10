@@ -7,6 +7,9 @@ async function main() {
   );
   console.log("Account balance:", (await deployer.getBalance()).toString());
 
+  const Multicall = await ethers.getContractFactory("Multicall");
+  const multicall = await Multicall.deploy();
+
   const FakeToken1 = await ethers.getContractFactory("FakeToken1");
   const ft1 = await FakeToken1.deploy();
 
@@ -23,6 +26,7 @@ async function main() {
     "200"
   );
 
+  console.log("Multicall address:", multicall.address);
   console.log("FakeToken1 address:", ft1.address);
   console.log("FakeToken2 address:", ft2.address);
   console.log("Deal address:", deal.address);

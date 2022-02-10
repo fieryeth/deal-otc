@@ -4,5 +4,23 @@ require("@nomiclabs/hardhat-waffle");
  * @type import('hardhat/config').HardhatUserConfig
  */
 module.exports = {
-  solidity: "0.8.0",
+  solidity: {
+    compilers: [
+      {
+        version: "0.5.0",
+      },
+      {
+        version: "0.8.0",
+        settings: {},
+      },
+    ],
+  },
+  networks: {
+    hardhat: {
+      mining: {
+        auto: false,
+        interval: 3000
+      }
+    }
+  }
 };
